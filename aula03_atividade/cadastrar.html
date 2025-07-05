@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+
+<body style="background-color: rgba(247, 72, 72, 0.719);">
+
+    <h1>Livraria AJR</h1>
+
+
+    <a href="./pagina_inicial.html">Inicio </a>
+    <br>
+    <a href="./entrar.html"> Entrar </a>
+    <br>
+    <a href="./cadastrar.html"> Cadastrar </a>
+    <br>
+    <a href="./pagina_de_contato.html"> Contato </a>
+
+    <hr>
+
+    <h2>cadastre-se</h2>
+
+    <p>Crie uma conta para poder comprar nossos livros e aproveitar nossas promoções! </p>
+
+    <p>Você já tem uma conta? Acesse o seu painel, <a href="./entrar.html"> Clique aqui. </a> </p>
+
+    <h3>Informações pessoais </h3>
+
+    <p>Nome completo</p>
+    <input required type="text" size="30" />
+
+    <p>Data de nascimento</p>
+    <input required type="date" size="30" />
+
+    <p>Endereço</p>
+    <p> <input required type="text" size="30" placeholder="Rua" /> <input type="text" size="30" placeholder="Número" />
+        <input type="text" size="30" placeholder="Bairro" />
+    </p>
+
+    <h3>Você está se cadastrando para:</h3>
+
+    <label>
+        <input type="radio" name="escolha">
+        Comprar livros
+    </label><br>
+
+    <label>
+        <input type="radio" name="escolha">
+        Vender meus livros
+    </label><br>
+
+    <label>
+        <input type="radio" name="escolha">
+        Trocar Livros
+    </label>
+
+    <h3>Dados de login</h3>
+
+
+
+    <form action="./confirmação_cadastro.html">
+
+        <p>E-mail</p>
+        <input required type="email" size="30" />
+
+
+        <br />
+        <br />
+
+        <label>
+            Digite sua senha!
+            <br />
+            <input required type="password" minlength="3" />
+
+        </label>
+
+        <p> <input required type="checkbox" size="30" /> Quero receber promoções no meu e-mail </p>
+
+        <br />
+
+
+        <button>Salvar e continuar </button>
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
