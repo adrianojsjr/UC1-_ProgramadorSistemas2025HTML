@@ -1,0 +1,63 @@
+ /* 
+    Paleta de cores:
+    roxo claro:    #E1BEE7
+    roxo escuro:    #7b1fa2
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+body{
+    font-family:"Libertinus Mono", monospace;
+    margin: 0;
+    
+}
+
+h1{
+    color:#ffffff;
+}
+
+.pacotao {
+    color:#BDBDBD;
+    font-size: 25px;
+   
+}
+
+.botao_principal{
+    background:#ff4081 ;
+    color:#000000;
+    border: none; /* Remove a porda do botão*/
+    font-size: 15px;
+    padding: 20px; /* Aumenta os espaço POR DENTRO do item */
+    border-radius: 5%; /*arredondar as bordas*/
+    cursor: pointer; /*muda a imagem do ponteiro do mouse*/
+    margin-top: 20px; /* Aumenta o espaço POR FORA do item*/
+    margin-right: 20px;
+}
+
+.botao_invertido{
+    background: transparent;
+    border: 3.5px solid #ff4081 ; 
+    padding: 20px;
+    border-radius: 5%;
+    color: #ff4081;
+}
+
+.cabecalho{
+    background:#9c27b0;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.texto_auxiliar{
+
+    text-align: right;
+    text-decoration: underline;
+    
+}
+
+/*criar container para alinhar todos os itens da pagina*/
+.container{ 
+    margin-left: 20px;
+
+}

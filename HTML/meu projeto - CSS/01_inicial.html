@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f1e0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        /* Navigation Styles */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #e74c3c;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+            margin: 30px 0;
+        }
+        
+        /* Product Styles */
+        h2 {
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        
+        h3 {
+            color: #e74c3c;
+            margin: 15px 0 10px;
+            font-size: 1.4em;
+        }
+        
+        .product img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        p {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        del {
+            color: #999;
+        }
+        
+        strong {
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+        
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 15px 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #c0392b;
+        }
+        
+        /* Categories Styles */
+        .categories {
+            margin: 30px 0;
+        }
+        
+        .categories a {
+            display: inline-block;
+            margin: 5px 0;
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .categories a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        /* Footer Styles */
+        .about-link {
+            display: block;
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        .about-link:hover {
+            color: #e74c3c;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .product {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MAJR Plásticos</h1>
+    
+    <img class="logo" width="250" src="./imagens prato/logo_prato.png" alt="Logo MAJR Plásticos">
+    
+    <div class="nav-links">
+        <a href="./01_inicial.html">Inicio</a> 
+        <a href="./04_contato.html">Contato</a> 
+    </div>
+
+    <hr>
+
+    <h2>Recomendados</h2>
+    
+    <div class="product">
+        <h3>Prato quadrado</h3>
+        <p>Pratos rasos com bordas brancas</p>
+        <p>Apto para ir ao microondas</p>
+        <img width="250" src="./imagens prato/quadradobranco.jpg" alt="Prato quadrado branco"/>
+        <p>de <del>R$ 3,00</del></p>
+        <h3>por R$ <strong>2,50</strong></h3>
+        <a href="https://shopee.com.br/Kit-50-Prato-Raso-com-Borda-Branco-Refei%C3%A7%C3%A3o-Churrasco-Festa-Pratos-Plastico-Quadrado-Branco-Preto-i.1265597786.23198371135?sp_atk=49dd0445-bc7a-4c4a-a2fe-a49f870bb081&xptdk=49dd0445-bc7a-4c4a-a2fe-a49f870bb081">     
+            <button>Comprar</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Pratos quadrados coloridos</h3>
+        <p>Pratos coloridos de qualidade, alta resistencia,</p>
+        <p>Apto para ir ao microondas</p>
+        <img width="250" src="./imagens prato/quadrado colorido.jpg" alt="Pratos quadrados coloridos"/>
+        <h3>por R$ <strong>3,50</strong></h3>
+        <a href="https://shopee.com.br/Pratos-Refei%C3%A7%C3%A3o-Raso-Quadrado-Kit-6-10-16-ou-20(Pl%C3%A1stico).Almo%C3%A7o-Jantar-Lanche.-i.1455704685.19099601200?sp_atk=5b3fba10-36e2-4eac-b2ea-712ebea3c146&xptdk=5b3fba10-36e2-4eac-b2ea-712ebea3c146">     
+            <button>Comprar</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Prato redondos</h3>
+        <p>Pratos redondos, desenhados, com um belo designer e resistência</p>
+        <p>Apto para ir ao microondas</p>
+        <img width="250" src="./imagens prato/redondodesenhado.jpg" alt="Prato redondo desenhado"/>
+        <p>de <del>R$ 3,50</del></p>
+        <h3>por R$ <strong>3,00</strong></h3>
+        <a href="https://shopee.com.br/Kit-100-Pratos-P%C3%A9tala-Plastico-Redondo-Fundo-Resistente-i.1390361104.22298014854?sp_atk=e21a1a6b-b270-4773-b1c6-f70fbb1b85ae&xptdk=e21a1a6b-b270-4773-b1c6-f70fbb1b85ae">     
+            <button>Comprar</button>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="categories">
+        <h2>Categorias</h2>
+        <p>Escolha as melhores opções para cada categoria</p>
+        <h3>Produtos Pet</h3>
+        <a href="https://shopee.com.br/Kit-20und-Comedouro-Bebedouro-Hamster-Tradicional-Pl%C3%A1stico-65ml-V%C3%A1rias-Cores-i.325885139.22898239313?sp_atk=c1cebb07-8ecb-4eb9-9bca-786e61b7f83a&xptdk=c1cebb07-8ecb-4eb9-9bca-786e61b7f83a">Comedouro</a>
+        <br> 
+        <a href="https://shopee.com.br/P%C3%A1-Higi%C3%AAnica-Para-Caixa-De-Areia-De-Gatos-Para-Uma-Limpeza-Di%C3%A1ria-i.897308979.22194199010?sp_atk=37a807b2-81df-44e1-a6f3-0bbc7c69ce78&xptdk=37a807b2-81df-44e1-a6f3-0bbc7c69ce78">Pá Higiênica para gatos</a> 
+    </div>
+
+    <a class="about-link" href="./06_quemsomos.html"><strong>Quem somos!!</strong></a>
+    
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MAJR Plásticos</title>
+    <style>
+        /* Reset e Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #e6f2ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Cabeçalho */
+        h1 {
+            color: #0056b3;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Navegação */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .nav-links a:hover {
+            background-color: #0056b3;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,86,179,0.75), rgba(0,0,0,0));
+            margin: 30px 0;
+        }
+        
+        /* Seção de Contato */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #0056b3;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        /* Formulário */
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        form p {
+            margin: 15px 0 5px;
+            font-weight: 500;
+            color: #0056b3;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        button[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 25px auto;
+            width: 200px;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Seção de Contatos Diretos */
+        .contact-methods {
+            margin-top: 40px;
+        }
+        
+        .contact-methods ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .contact-methods li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-methods img {
+            vertical-align: middle;
+        }
+        
+        .contact-methods a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-methods a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        /* Mapa */
+        .map-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 100%;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            form {
+                padding: 20px;
+            }
+            
+            iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MAJR Plásticos</h1>
+
+    <img class="logo" width="250" src="./imagens prato/logo_prato.png" alt="Logo MAJR Plásticos">
+
+    <div class="nav-links">
+        <a href="./01_inicial.html">Inicio</a>
+        <a href="./04_contato.html">Contato</a>
+    </div>
+
+    <hr>
+
+    <div class="contact-header">
+        <h2>Contato</h2>
+        <h3>Entre em contato com MAJR Plásticos</h3>
+        <p>Envie uma mensagem</p>
+        <p>Preencha o formulário abaixo para enviar uma mensagem para nós:</p>
+    </div>
+
+    <form action="./05_confirmação.html">
+        <p>Nome completo:</p>
+        <input type="text" size=30 required placeholder="Seu nome completo"/>
+
+        <p>Contato:</p>
+        <input type="email" size=30 required placeholder="Telefone ou e-mail"/>
+
+        <p>Mensagem:</p>
+        <textarea placeholder="Digite sua mensagem" minlength=5 maxlength=500 rows=5 cols=55 required></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+    </form>
+
+    <div class="contact-methods">
+        <h2>Fale conosco</h2>
+        <p>Você também pode falar diretamente conosco</p>
+
+        <ul>
+            <li><img width="18" src="./imagens prato/contato.png" alt="Telefone"/> (16) 9 9206-7288</li>
+            <li><img width="18" src="./imagens prato/logowpp.png" alt="WhatsApp"/> <a target="_blank" href="https://wa.me/5516992067288">Enviar mensagem no WhatsApp</a></li>
+            <li>
+                <p><img width="18" src="./imagens prato/Maps_icon.png" alt="Endereço"/> <strong>Endereço:</strong> Rua Antônio Carlos Ferraz de Sales, 477, Sta Felícia - SP, 13563-306</p>
+                <p>Veja o endereço no mapa:</p>
+            </li>
+        </ul>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.872642998443!2d-47.9171828!3d-21.997474399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870a17c81df57%3A0x837afca1a0a32e45!2sR.%20Ant%C3%B4nio%20Carlos%20Ferraz%20de%20Salles%2C%20477%20-%20Parque%20Santa%20Felicia%20Jardim%2C%20S%C3%A3o%20Carlos%20-%20SP%2C%2013563-306!5e1!3m2!1spt-BR!2sbr!4v1751722606256!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>

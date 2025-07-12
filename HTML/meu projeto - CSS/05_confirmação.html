@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação - MAJR Plásticos</title>
+    <style>
+        /* Reset e Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: rgba(116, 240, 126, 0.842);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Container Principal */
+        .confirmation-container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .confirmation-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Cabeçalho */
+        h1 {
+            color: #2a7f3f;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Navegação */
+        .nav-link {
+            display: inline-block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: #2a7f3f;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .nav-link:hover {
+            background-color: #2a7f3f;
+            color: white;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(42, 127, 63, 0.75), rgba(0,0,0,0));
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        /* Mensagem de Confirmação */
+        h2 {
+            color: #2a7f3f;
+            margin: 25px 0 15px;
+            font-size: 2em;
+        }
+
+        .confirmation-message {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .success-icon {
+            font-size: 4em;
+            color: #2a7f3f;
+            margin-bottom: 20px;
+        }
+
+        .return-link {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #2a7f3f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .return-link:hover {
+            background-color: #1e6b32;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .confirmation-container {
+                padding: 30px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>MAJR Plásticos</h1>
+
+        <img class="logo" width="250" src="./imagens prato/logo_prato.png" alt="Logo MAJR Plásticos">
+
+        <a class="nav-link" href="./pagina_de_contato.html">Contato</a>
+
+        <hr>
+
+        <div class="success-icon">✓</div>
+        
+        <h2>Parabéns!</h2>
+
+        <div class="confirmation-message">
+            <p>Mensagem enviada com sucesso!</p>
+            <p>Entraremos em contato em breve.</p>
+        </div>
+
+        <a class="return-link" href="./01_inicial.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
