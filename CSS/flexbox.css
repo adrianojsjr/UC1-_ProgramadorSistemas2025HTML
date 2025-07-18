@@ -1,0 +1,27 @@
+body{
+    color: #FFFFFF;
+    background-color: #607d8b ;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ; /* Ajusta o espaçamento do conteúdo*/
+    align-items: center;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: row ;
+    gap: 30px; /* espaçamento entre itens so funciona no flex*/
+
+}
+
+.configurar_menu{
+    display: flex;
+    align-items: center;
+
+}
+
+

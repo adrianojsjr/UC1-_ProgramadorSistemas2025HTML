@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modelos CSS</title>
+
+  <!-- Fonte Inter do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome.js">
+    
+  <style>
+    /* Reset básico e fonte padrão */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Estilo do corpo da página */
+    body {
+      background-color: #f5f7fa; /* Cor de fundo clara */
+      padding: 40px; /* Espaço interno ao redor do conteúdo */
+    }
+
+    /* Container principal com layout em grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsivo com largura mínima de 320px */
+      gap: 20px; /* Espaço entre os cards */
+      max-width: 1100px; /* Largura máxima */
+      margin: auto; /* Centraliza na página */
+    }
+
+    /* Cada card (bloco com ícone + texto) */
+    .card {
+      background-color: #ffffff; /* Fundo branco */
+      border-radius: 8px; /* Bordas arredondadas */
+      padding: 20px; /* Espaço interno */
+      display: flex; /* Usa flexbox para alinhar ícone e texto lado a lado */
+      align-items: flex-start;
+      gap: 16px; /* Espaço entre ícone e texto */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra leve para destaque */
+    }
+
+    /* Estilo dos ícones */
+    .icon {
+      color: #28b485; /* Cor verde dos ícones */
+      font-size: 32px; /* Tamanho dos ícones */
+    }
+
+    /* Estilo da área de texto */
+    .text h3 {
+      margin-bottom: 8px; /* Espaço abaixo do título */
+      font-size: 18px; /* Tamanho do título */
+      color: #0d0d0d; /* Cor escura */
+    }
+
+    .text p {
+      font-size: 14px; /* Tamanho do texto */
+      color: #333; /* Cor de texto mais clara */
+    }
+  </style>
+
+  <!-- Ícones do Font Awesome (CDN) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Início do container com todos os cards -->
+  <div class="container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-archive"></i></div>
+      <div class="text">
+        <h3>Modelos CSS</h3>
+        <p>O site TemplateMo é o melhor para você explorar e baixar modelos de sites gratuitos.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-cloud"></i></div>
+      <div class="text">
+        <h3>Páginas da Web HTML5</h3>
+        <p>Os modelos são baseados na estrutura CSS do Bootstrap 5. Você pode facilmente adaptar ou modificar com base em suas necessidades.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-charging-station"></i></div>
+      <div class="text">
+        <h3>Designs responsivos</h3>
+        <p>Todos os nossos modelos CSS são 100% gratuitos para uso em sites comerciais ou de negócios.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-suitcase"></i></div>
+      <div class="text">
+        <h3>Pronto para celular e tablet!</h3>
+        <p>Nossos modelos HTML CSS são bem testados em compatibilidade com dispositivos móveis, tablets e desktops.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-archway"></i></div>
+      <div class="text">
+        <h3>Suporte rápido ao cliente</h3>
+        <p>Não hesite em nos contatar se tiver alguma dúvida ou preocupação sobre nossos modelos.</p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+      <div class="text">
+        <h3>Totalmente personalizável</h3>
+        <p>Se você tiver alguma ideia ou sugestão sobre novos modelos, sinta-se à vontade para nos informar.</p>
+      </div>
+    </div>
+
+  </div> <!-- fim do container -->
+</body>
+</html>

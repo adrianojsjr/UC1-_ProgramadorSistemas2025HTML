@@ -1,0 +1,131 @@
+/* Importa a fonte 'Libertinus Mono' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+/* Estilização geral do corpo da página */
+body {
+    background-color: #f5f5f5; /* Define a cor de fundo como cinza claro */
+    font-family: "Libertinus Mono", monospace; /* Aplica a fonte personalizada */
+    color: #333; /* Define a cor padrão do texto como cinza escuro */
+    margin: 10px 0px; /* Remove a margem padrão do body, deixando tudo encostado na pagina */
+}
+
+
+
+/* Estilo para os links dentro do menu */
+.links_menu a {
+    color: #795548; /* Define a cor do link como marrom */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    margin-right: 30px; /* Espaçamento à direita entre os links */
+    font-size: 13px; /* Tamanho da fonte dos links */
+    
+}
+
+/* Estilo quando o usuário passa o mouse sobre o link */
+.links_menu a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+    color: #616161; /* Muda a cor do link para um tom de cinza escuro */
+}
+
+/* Estilo da seção de abertura (banner ou destaque) */
+.abertura {
+    background: #BDBDBD; /* Cor de fundo inicial (caso o degradê não carregue) */
+    background: linear-gradient(90deg, rgba(189, 189, 189, 1) 0%, rgba(121, 85, 72, 1) 50%);
+    /* Cria um degradê horizontal da esquerda (cinza claro) até o meio (marrom) */
+    padding: 50px 500px 200px 0px; /* Espaçamento interno: topo, direita, baixo, esquerda */
+}
+
+/* Estilização dos parágrafos dentro da seção .abertura */
+.abertura p {
+    color: #f5f5f5; /* Define a cor do texto como branco */
+    width: 400px; /* Define largura fixa para os parágrafos */
+    font-size: 17px; /* Tamanho do texto */
+    margin: 10px 0px 50px 150px;
+}
+
+/* Estilização dos títulos h2 dentro da seção .abertura */
+.abertura h2 {
+    font-size: 28px; /* Define tamanho do título */
+    margin: 150px 0px 50px 150px;
+}
+
+/* Estilo do botão principal */
+.botao_principal {
+    background-color: #795548; /* Fundo marrom */
+    color: #BDBDBD; /* Cor do texto (cinza claro) */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5%; /* Arredonda levemente os cantos */
+              
+    padding: 10px 50px; /* Espaço interno: 10px cima/baixo, 50px lados */
+    font-size: 18px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+    /* margin-top: 20px;  Espaço acima do botão */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao_principal:hover {
+    background-color: #212121; /* Muda a cor de fundo para quase preto */
+    transition: 3.3s; /* Aplica transição suave de 3.3 segundos */
+}
+
+/* Estilo para o card de produto */
+.card_produto {
+    background-color: #f5f5f5; /* Fundo do card (mesma cor do fundo da página) */
+    width: 350px; /* Largura fixa do card */
+    border: 1px solid #BDBDBD; /* Borda fina cinza clara */
+    box-shadow: 1px 2px 3px #BDBDBD; /* Sombra leve para destaque */
+    margin: 50px; /* Espaço externo ao redor do card */
+    
+}
+
+/* Estilo do conteúdo interno dos cards */
+.card_conteudo {
+    padding: 20px; /* Espaçamento interno em todos os lados */
+}
+
+
+
+
+.botoes_pagina{
+    background-color: #795548; 
+    color: #BDBDBD;
+    border: none; 
+    border-radius: 5%;               
+    padding: 5px 25px;
+    font-size: 15px; 
+    cursor: pointer; 
+    margin-top: 20px;
+    
+
+}
+
+.imagem_card{
+    text-align: end;
+    width: 100%;
+
+}
+
+
+.cardTexto {
+    padding: 30px;
+    color: #000;
+}
+.card_titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin:0;
+}
+
+.itens_lado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ; /* Ajusta o espaçamento do conteúdo*/
+    align-items: center;
+}
+
+.inicio_esquerda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}

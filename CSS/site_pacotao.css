@@ -25,7 +25,7 @@ h1{
 .botao_principal{
     background:#ff4081 ;
     color:#000000;
-    border: none; /* Remove a porda do botão*/
+    border: none; /* Remove a borda do botão*/
     font-size: 15px;
     padding: 20px; /* Aumenta os espaço POR DENTRO do item */
     border-radius: 5%; /*arredondar as bordas*/
@@ -58,6 +58,9 @@ h1{
 
 /*criar container para alinhar todos os itens da pagina*/
 .container{ 
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ; /* Ajusta o espaçamento do conteúdo*/
+    align-items: center;
 
 }

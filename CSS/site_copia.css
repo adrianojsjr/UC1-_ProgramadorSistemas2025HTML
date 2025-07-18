@@ -1,0 +1,152 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+
+
+body {
+    background-color: #f5f5f5;
+    /* Define a cor de fundo como cinza claro */
+    font-family: "Special Gothic Expanded One", sans-serif;
+    /* Aplica a fonte personalizada */
+    color: #333;
+    /* Define a cor padrão do texto como cinza escuro */
+    margin: 10px 0px;
+    /* Remove a margem padrão do body, deixando tudo encostado na pagina */
+}
+
+
+/*configuração da parte superior da pagina *************************************************************************/
+.link_menu {
+    background-color: rgb(14, 14, 90);
+    padding: 20px 5px 2px 400px;
+}
+
+.link_menu a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 13px;
+
+}
+
+.link_menu a:hover {
+
+    color: #f1600b;
+}
+
+/*configuração primeira parte do site ******************************************************************************/
+
+.abertura {
+    color: #f5f5f5;
+    background-image: url(./imagemsitecopia/slide-01.jpg);
+    /*como inserir imagem de fundo*/
+    background-size: cover;
+    /*configura a imagem no tamanho certo*/
+
+    padding: 250px 500px 300px 0px;
+}
+
+.abertura h1 {
+    color: #f5f5f5;
+    width: 1000px;
+    font-size: 60px;
+    margin: 10px 0px 50px 400px;
+
+}
+
+.abertura p {
+    color: #f5f5f5;
+    width: 1000px;
+    font-size: 15px;
+    margin: 0px 0px 0px 400px;
+
+}
+
+.botao_verdepg {
+    background-color: #47ac5d;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5%;
+
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 10px 0px 400px;
+}
+
+
+.botao_laranjapg {
+    background-color: #e4480f;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5%;
+
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    
+
+}
+
+
+
+/* configuração dos botões verdes e laranjas ***********************************************************************/
+.botao_verde {
+    background-color: #47ac5d;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5%;
+
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+
+.botao_laranja {
+    background-color: #e4480f;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 5%;
+
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+
+/* configuração dos cards *****************************************************************************************/
+
+.card_produto {
+    background-color: #f5f5f5;
+    width: 350px;
+    border: 1px solid #000000;
+    box-shadow: 1px 2px 3px #fffbfb;
+    margin: 50px;
+
+}
+
+/* Estilo do conteúdo interno dos cards */
+.card_conteudo {
+    padding: 20px;
+    /* Espaçamento interno em todos os lados */
+}
+
+.imagem_card {
+    text-align: end;
+    width: 100%;
+
+}
+
+.itens_lado { 
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    
+}
+
+    /*configuração...***************************************************************************************************/
