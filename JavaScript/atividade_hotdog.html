@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotDog do fera</title>
+</head>
+
+<body>
+
+    <script>
+
+        alert("Seja bem vindo ao HotDog do Fera!!")
+
+
+
+        let salsicha = prompt("Digite o preço da salsicha:") // faz de um jeito separado a programação, em duas linhas
+        salsicha = parseFloat(salsicha)
+
+        let pure = prompt("Digite o preço do purê de batata") // faz de um jeito separado a programação, em duas linhas
+        pure = parseFloat(pure)
+
+        let salada = prompt("Digite o preço da salada:") // faz de um jeito separado a programação, em duas linhas
+        salada = parseFloat(salada)
+
+
+
+        alert(" Ingredientes: \nSalsicha: R$" + salsicha +
+            "\nPurê de batata R$" + pure +
+            "\nSalada R$" + salada)
+
+        alert("Ingredientes de custo fixo: \nPão - R$ 1.15 \nBatata palha - R$ 0.95")
+
+        const batata = 0.95
+        const pao = 1.15
+        const ingredientes_fixos = batata + pao
+      
+        let dog_simples = salsicha + pure + ingredientes_fixos
+        let dog_duplo = salsicha + salsicha + pure + salada + ingredientes_fixos
+        let dog_especial = salsicha + salsicha + salsicha + pure + pure + salada + ingredientes_fixos
+        
+        
+        
+        alert ("O preço do dog simples é de: R$" + dog_simples.toFixed(2) + 
+            "\nO preço do dog simples é de: R$" + dog_duplo.toFixed(2) +
+            "\nO preço do dog simples é de: R$" + dog_especial.toFixed(2)
+         )
+        
+        
+        
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<body>
+
+    <div id="cadastro" class="animate__animated animate__bounce"  >
+        <h1>Cadastro</h1>
+
+        <button onclick="mostrarUsuario ()" >Cadastro de usuário</button>
+        <br />
+        <button onclick="mostrarEmpresa ()">Cadastro de empresas</button>
+
+    </div>
+
+    <div id="usuario">
+        <h2>Usuario</h2>
+        <p>Este é o cadastro de usuarios</p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="empresa">
+        <h2>Empresa</h2>
+        <p>Este é o cadastro de uma empresa</p>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    <script>
+
+        esconderTodos() // escrever a lógica com a sequencia certa sempre
+        mostrarInicio()
+         
+
+        function esconderTodos() {
+            document.querySelector("#usuario").style.display = "none"
+            document.querySelector("#empresa").style.display = "none"
+            document.querySelector("#cadastro").style.display = "none"
+
+            // document.querySelector("#usuario").style.color = "blue" // style serve para alterar a cor quando aciona a ação (clicar no botão)
+            // document.querySelector("#usuario").style.background = "pink"
+            // document.querySelector("#usuario").style.fontSize = "30px"
+        }
+
+        function mostrarInicio() {
+            document.querySelector("#cadastro").style.display = "block"
+
+        }
+
+        function mostrarUsuario () {
+            esconderTodos()
+            document.querySelector("#usuario").style.display = "block"
+
+        }
+
+        function mostrarEmpresa () {
+            esconderTodos()
+            document.querySelector("#empresa").style.display = "block"
+
+        }
+
+        function voltar () {
+            esconderTodos()
+            document.querySelector("#cadastro").style.display = "block"
+            
+
+        }
+
+     
+
+        
+      
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

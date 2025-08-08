@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISÃO</title>
+</head>
+<body>
+
+    <script>
+        //REVISÃO DA AULA 01 VARIAVEIS 
+        // console.log escreve somente no inspecionar (serve para o programador, não para o usuario que ta visualizando o site)
+        console.log("Revisão de JavaScript")
+        //alert cria uma mensagem na tela e trava o navegador \n - pula linha
+        alert("Revisão de \n JavaScript")
+        // se a variavel let estiver como var, troque para let
+        let tomate= parseFloat( prompt ("Digite o preço do tomate:")) // fazer dessa forma encurta a programação
+
+        let hamburger = prompt ("Digite o preço do hamburger:") // faz de um jeito separado a programação, em duas linhas
+        hamburger= parseFloat (hamburger)
+
+
+        let queijo 
+        queijo = prompt ("Digite o preço do queijo:")
+        queijo = parseFloat (queijo)
+
+
+        alert("Cárdapio: \nTomate: R$" + tomate 
+                + "\nHamburger: R$" + hamburger 
+                + "\nQueijo: R$" + queijo)
+
+        let preco_custo = tomate + hamburger + queijo 
+        alert ("O preço de custo é: R$" + preco_custo)
+           
+        
+
+        let margem_lucro = 50 // porcentagem
+        let preco_venda = preco_custo + margem_lucro * preco_custo / 100 
+       alert ("Preço final: R$" + preco_venda.toFixed(2))
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

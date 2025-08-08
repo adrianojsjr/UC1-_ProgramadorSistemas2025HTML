@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Carrinho</title>
+</head>
+
+<body>
+
+    <h1>PACOTAO SUPERMERCADO</h1>
+
+    <p>Arroz - R$ 15,90</p>
+
+    <button onclick="adicionarArroz()">Adicionar</button>
+    <button onclick="removerArroz()">Remover</button>
+
+    <p>Feijão - R$ 11,40</p>
+
+    <button onclick="adicionarFeijao()">Adicionar</button>
+    <button onclick="removerFeijao()">Remover</button>
+
+    <h2>Seu carrinho</h2>
+
+    <button onclick="verCarrinho() "> Ver carrinho</button>
+    <button onclick="limparCarrinho() ">Limpar carrinho</button>
+
+    <script>
+
+
+        let carrinho = 0
+        let arroz = 0
+        let feijao = 0
+        const precoArroz = 15.90
+        const precoFeijao = 11.40
+
+
+        function adicionarArroz() {
+            arroz++
+            carrinho++
+
+        }
+
+        function removerArroz() {
+            arroz--
+            carrinho--
+
+        }
+
+        function adicionarFeijao() {
+            feijao++
+            carrinho++
+        }
+
+        function removerFeijao() {
+            feijao--
+            carrinho--
+
+        }
+
+        function verCarrinho() {
+            let totalArroz = (arroz * precoArroz).toFixed(2)
+            let totalFeijao = (feijao * precoFeijao).toFixed(2)
+
+            alert("itens no carrinho: " + carrinho +
+                "\nQnt Arroz: " + arroz + " Total Arroz:" + totalArroz +
+                "\nQnt Feijão: " + feijao + " Total Feijão:" + totalFeijao)
+        }
+
+
+
+
+        function limparCarrinho() {
+            carrinho = 0
+            arroz = 0
+            feijao = 0
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

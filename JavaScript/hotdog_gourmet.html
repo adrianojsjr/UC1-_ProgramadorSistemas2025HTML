@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hot Dog Chilli Peper</title>
+</head>
+
+<body>
+
+    <h1> RED HOT DOG CHILLI PEPER</h1>
+
+    <p>Digite o Valor da salsicha: </p>
+    <input id="inputSalsicha" />
+
+    <P>Digite o valor do purê de batata: </P>
+    <input id="inputPure" />
+
+    <P>Digite o valor da salada: </P>
+    <input id="inputSalada" />
+    <br>
+    <br>
+    <button onclick="atualizar_Cardapio() ">Atualizar cardápio</button>
+
+    <hr>
+    <h2>Cárdapio:</h2>
+
+    <ul>
+        <li>Dog simples: R$ <span id=" textoDogSimples"></span> </li>
+        <li>Dog duplo: R$ <span id=" textoDogDuplo"></span> </li>
+        <li>Dog especial: R$ <span id=" textoDogEspecial"></span> </li>
+    </ul>
+
+
+
+    <script>
+
+        let salsicha
+        let pure
+        let salada
+
+        let dog_simples
+        let dog_duplo
+        let dog_especial
+
+        const batata = 0.95
+        const pao = 1.15
+
+
+
+
+
+        function atualizar_Cardapio() {
+
+            document.querySelector("#inputSalsicha").value
+            document.querySelector("#inputPure").value
+            document.querySelector("#inputSalada").value
+
+            ingredientes_fixos = batata + pao
+            dog_simples = salsicha + pure + batata + pao
+            dog_duplo = salsicha + salsicha + pure + salada + batata + pao
+            dog_especial = salsicha + salsicha + salsicha + pure + pure + salada + batata + pao
+
+            document.querySelector("#textoDogSimples").innerHTML = dog_simples
+            document.querySelector("#textoDogDuplo").innerHTML = dog_duplo
+            document.querySelector("#textoDogEspecial").innerHTML = dog_especial
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
